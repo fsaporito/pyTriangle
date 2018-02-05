@@ -1,0 +1,12 @@
+// Syntax: Protobuffer Version 3
+syntax = "proto3";
+
+message Edge {
+	
+	// First Point Vertex (Point Integer Identifier)
+	int32 pointA = 1;
+	
+	// Second Point Vertex (Point Integer Identifier)
+	int32 pointB = 2;
+	
+}

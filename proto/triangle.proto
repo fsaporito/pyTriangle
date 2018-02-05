@@ -1,0 +1,18 @@
+// Syntax: Protobuffer Version 3
+syntax = "proto3";
+
+message Triangle {
+	
+	// Triangle Number (Integer Identifier)
+	int32 t_num = 1;
+	
+	// First Point Vertex (Point Integer Identifier)
+	int32 pointA = 2;
+	
+	// Second Point Vertex (Point Integer Identifier)
+	int32 pointB = 3;
+	
+	// Third Point Vertex (Point Integer Identifier)
+	int32 pointC = 4;
+	
+}

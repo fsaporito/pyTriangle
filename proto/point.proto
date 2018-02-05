@@ -1,0 +1,18 @@
+// Syntax: Protobuffer Version 3
+syntax = "proto3";
+
+message Point {
+	
+	// Point Number (Integer Identifier)
+	int32 p_num = 1;
+	
+	// Point X Coordinate
+	double x = 2;
+	
+	// Point Y Coordinate
+	double y = 3;
+	
+	// Border Flag (True: point on the domain border)
+	bool border = 4;
+	
+}

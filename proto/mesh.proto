@@ -1,0 +1,19 @@
+// Syntax: Protobuffer Version 3
+syntax = "proto3";
+
+import "point.proto";
+import "edge.proto";
+import "triangle.proto";
+
+message Mesh {
+	
+	// Points List
+	map<int32, Point> points = 1;
+	
+	// Edges List
+	repeated Edge edges = 2;
+	
+	// Triangles List
+	map<int32, Triangle> triangles = 3;
+	
+}
