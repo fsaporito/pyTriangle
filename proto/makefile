@@ -29,6 +29,8 @@ all:
 	make build
 
 build:
+	mkdir -p ${PROTO_OUT}
+	mkdir -p ${PROTO_PYC}
 	echo "${PROTOC} -I=${PROTO_IN} --python_out=${PROTO_OUT} ${PROTO_SOURCE}"
 	${PROTOC} -I=${PROTO_IN} --python_out=${PROTO_OUT} ${PROTO_SOURCE}
 	touch ${PROTO_OUT}/__init__.py
